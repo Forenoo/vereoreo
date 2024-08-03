@@ -1,6 +1,5 @@
 "use client";
 
-import * as React from "react";
 import Autoplay from "embla-carousel-autoplay";
 import {
   Carousel,
@@ -8,7 +7,6 @@ import {
   CarouselItem,
 } from "@/components/ui/carousel";
 
-import Image from "next/image";
 import ProjectCard from "./project-card";
 
 export default function ProjectCarousel() {
@@ -33,11 +31,7 @@ export default function ProjectCarousel() {
             key={index}
             className="md:basis-1/2 lg:basis-1/3 2xl:basis-1/4"
           >
-            <ProjectCard
-              image="/projectbanner.jpg"
-              title="Pasargeming"
-              year="2024"
-            />
+            <ProjectCard image="/poster.webp" title="Pasargeming" year="2024" />
           </CarouselItem>
         ))}
       </CarouselContent>
